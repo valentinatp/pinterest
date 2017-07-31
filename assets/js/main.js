@@ -10,4 +10,22 @@ var resultado = [{"id":1,"title":"Fuke zisukje bu dibas sik.","description":"Jus
 		var contenedorTitle = $(".contenedor-datos").append(contTitulo);
 	})
 
+
+ 
+	$(".imagenes").click(function(){
+		var titulo = $(this).children("h5").text();//this es donde se encuentra, children() es para seleccionar el hijo directo del elemento.
+		var img = $(this).children(".imagenes").attr("jpg");
+		var des = $(this).children("h6").text();
+		var usuario = $(this).children("h6").text();
+		var hash = $(this).children("h6").text();
+
+		var contModal = '<div class="modal-completo"><div class="cont-iconos">' + '<i class="fa fa-upload" aria-hidden="true"></i>' + 
+		'<i class="fa fa-check" aria-hidden="true"></i>' + '<i class="fa fa-ellipsis-h" aria-hidden="true"></i>' + 
+		'<i class="fa fa-floppy-o" aria-hidden="true"></i>' + '</div>' + '<div>' + titulo + '</div><div>' + img + '</div><div>' + 
+		'<i class="fa fa-user" aria-hidden="true"></i>' + ' ' + usuario + ' ' + hash + '</div></div>';
+
+		$(".contenedor-modal").append(contModal);
+	})
+
+
 });
