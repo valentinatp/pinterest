@@ -1,3 +1,58 @@
 *{
     font-family: 'Convergence', sans-serif;
 }
+
+nav{
+    div{
+        div{
+            ul{
+                font-size: 15px;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $color_negro;
+                        &:hover{
+                            background-color: $color_pint;
+                            color: $color_blanco;
+                            font-size: 18px;
+                            transition: 0.5s;
+                            border-radius: 10px;
+                        }
+                    }
+                    input{
+                        width: 700px;
+                        border: none;
+                        background-color: $color_gris;
+                        margin-top: 15px;
+                        padding: 0 10px;
+                    }
+                    #pint{
+                        color: $color_pint;
+                    }
+                }
+            }
+        }
+    }
+    div{
+        div{
+            div{
+                ul{
+                    li{
+                        a{
+                            padding: 10px;
+                            background-color: #976d58;
+                            margin: 0 2px;
+                            border-radius: 10px;
+                            color: $color_blanco;
+                            &:hover{
+                                color: $color_negro;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
